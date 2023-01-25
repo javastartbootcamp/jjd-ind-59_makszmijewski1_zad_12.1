@@ -22,10 +22,10 @@ class Main {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("results.txt", true));
             switch (numbersAndOperator[1]) {
-                case "+" -> writer.write(line + " = " + (a + b) + "\n");
-                case "-" -> writer.write(line + " = " + (a - b) + "\n");
-                case "*" -> writer.write(line + " = " + (a * b) + "\n");
-                case "/" -> writer.write(line + " = " + (a / b) + "\n");
+                case "+" -> writer.write(a + " + " + b + " = " + (a + b) + "\n");
+                case "-" -> writer.write(a + " - " + b + " = " + (a - b) + "\n");
+                case "*" -> writer.write(a + " * " + b + " = " + (a * b) + "\n");
+                case "/" -> writer.write(a + " / " + b + " = " + (a / b) + "\n");
                 default -> writer.write("nieprawidłowe dane" + "\n");
             }
             writer.close();
