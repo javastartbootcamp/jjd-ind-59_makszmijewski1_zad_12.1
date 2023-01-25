@@ -40,10 +40,10 @@ class Main {
         double b = Double.parseDouble(numbersAndOperator[2]);
 
         switch (numbersAndOperator[1]) {
-            case "+" -> System.out.println(line + " = " + (a + b));
-            case "-" -> System.out.println(line + " = " + (a - b));
-            case "*" -> System.out.println(line + " = " + (a * b));
-            case "/" -> System.out.println(line + " = " + (a / b));
+            case "+" -> System.out.println(a + "+" + b + " = " + (a + b));
+            case "-" -> System.out.println(a + "-" + b + " = " + (a - b));
+            case "*" -> System.out.println(a + "*" + b + " = " + (a * b));
+            case "/" -> System.out.println(a + "/" + b + " = " + (a / b));
             default -> System.out.println("nieprawidłowe dane");
         }
     }
